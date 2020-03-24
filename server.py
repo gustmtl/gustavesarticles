@@ -6,7 +6,7 @@ heroku = Heroku(app)
 
 @app.route("/", methods= ['GET'])
 def show_home():
-    render_template('home.html')
+    return render_template('home.html')
 
 
 if __name__ == '__main__':
