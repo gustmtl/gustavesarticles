@@ -2,9 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Home</title>
+    <title>Videos</title>
 
     <link rel="stylesheet" href="static/css/styles.css">
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway&display=swap" rel="stylesheet">
 
     <!-- Bulma integration -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,49 +21,63 @@
 
 </head>
 
-<body>
+<body class="body">
 
 
+    <!-- section for the breadcrumb : hero -->
+    <section class="hero background-color">
+        <div class="hero-body">
+            <nav class="breadcrumb has-bullet-separator center is-medium" aria-label="breadcrumbs">
+                <ul>
+                    <li><a href="/"><p class="orange"> Home</p></a></li>
+                    <li><a href="/articles"><p class="orange"> Articles</p></a></li>
+                    <li><a href="/bitcoin"><p class="orange"> Bitcoin</p></a></li>
+                    <li class="is-active"><a href=""><p> Videos</p></a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
 
     <div class="columns">
         <div class="column is-half is-offset-one-quarter">
 
-            <!-- section for the breadcrumb : hero -->
-            <section class="hero">
-                <div class="hero-body">
-                    <nav class="breadcrumb has-bullet-separator" aria-label="breadcrumbs">
-                      <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/articles">Articles</a></li>
-                        <li><a href="/bitcoin">Bitcoin</a></li>
-                        <li class="is-active"><a href="">Videos</a></li>
-                      </ul>
-                    </nav>
-                </div>
-            </section>
-
             <!-- section for the text : content -->
             <section class="section">
                 <div class="content" id="welcome">
-                    <h1 class="title is-3">Here is my video list!</h1><br>
-                    <p class="subtitle is-5">Here you can find educational videos I found fascinating and that I want to share with you!<br>
-                        I hope you'll enjoy it!</p>
+                    <h1 class="title is-3 center">Videos</h1><br><br>
+                    <p class="subtitle is-6 text">Here are some particularly interesting videos I wanted to share.<br><br>
+                        Enjoy!</p><br>
                 </div><br>
+
+                <hr class="hr"><br>
                 <div class="content" id="videos">
-                    <h3 class="title is-6"> Videos </h3>
+                    <h3 class="title is-5 center"> Videos </h3>
                     <ul>
-                        <li><a href="https://www.realvision.com/shows/the-interview/videos/the-psychology-of-high-performers" target="_blank"><u>The Psychology of High Performers</u></a>
-                         : This episode of The Interview from Real Vision talks about what high performers have in common and what are the different types</li>
-                        <li><a href="https://www.youtube.com/watch?v=5MuIMqhT8DM" target="_blank"><u>Sleep is your superpower - Matt Walker</u></a>
-                            : Ted talk by <em>Why we sleep?</em> author, a fascinating containing the most fascinating things about sleep</li>
-                        <li>link 3</li>
+                        <li><a class="link-title" href="https://www.realvision.com/shows/the-interview/videos/the-psychology-of-high-performers" target="_blank">The Psychology of High Performers</a>
+                            <p class="text">This episode of The Interview from Real Vision talks about what high performers have in common and what are the different types</p>
+                        </li><br class="br1">
+                        <br>
+
+                        <li><a class="link-title" href="https://www.youtube.com/watch?v=5MuIMqhT8DM" target="_blank">Sleep is your superpower - Matt Walker</a>
+                            <p class="text">Ted talk by <em>Why we sleep?</em> author, a fascinating containing the most fascinating things about sleep</p>
+                        </li><br class="br1">
+                        <br>
+
                     </ul><br>
                 </div>
             </section>
-
-
         </div>
     </div>
+
+    <footer class="footer background-color">
+          <div class="content has-text-centered">
+            <p>
+              Made by Gustave Laurant in April 2020.
+                You can find me on <a class="orange" href="https://twitter.com/tutalaurant">Twitter</a> or
+                <a class="orange" href="https://www.linkedin.com/in/gustave-laurant-8a2214122/">LinkedIn</a>.
+            </p>
+          </div>
+    </footer>
 
 </body>
 </html>

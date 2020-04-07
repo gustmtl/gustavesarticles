@@ -1,5 +1,60 @@
+.hr {
+       display: block;
+       position: relative;
+       padding: 0;
+       margin: 8px auto;
+       height: 0;
+       width: 100%;
+       max-height: 0;
+       font-size: 1px;
+       line-height: 0;
+       clear: both;
+       border: none;
+       border-top: 1px solid #aaaaaa;
+       border-bottom: 1px solid #ffffff;
+    }
+
+
+.body {
+    font-family: Montserrat, sans-serif;
+}
+
 .center {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+.text {
+    text-align: justify;
+}
+
+.right {
+    position: absolute;
+    right: 0px;
+}
+
+.br1 {
+    display: block;
+    margin: 3px 0;
+}
+
+
+.orange {
+    color: #ffa41b;
+}
+
+.link-title {
+    color: #ffa41b;
+    font-weight: bold;
+}
+
+.link {
+    color: black;
+    font-weight: bold;
+}
+
+.background-color {
+    background-color: #fafafa;
+}
+

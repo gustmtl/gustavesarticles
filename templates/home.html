@@ -2,7 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Home</title>
+    <title>Welcome</title>
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="static/css/styles.css">
 
@@ -16,45 +19,50 @@
 
 </head>
 
-<body>
+<body class="body">
 
-
+    <!-- section for the breadcrumb : hero -->
+    <section class="hero background-color">
+        <div class="hero-body">
+            <nav class="breadcrumb has-bullet-separator center is-medium">
+                <ul>
+                    <li class="is-active"><a href=""><p> Home</p></a></li>
+                    <li><a href="/articles"><p class="orange"> Articles</p></a></li>
+                    <li><a href="/bitcoin"> <p class="orange">Bitcoin</p></a></li>
+                    <li><a href="/videos"><p class="orange"> Videos</p></a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
 
     <div class="columns">
         <div class="column is-half is-offset-one-quarter">
 
-            <!-- section for the breadcrumb : hero -->
-            <section class="hero">
-                <div class="hero-body">
-                    <nav class="breadcrumb has-bullet-separator" aria-label="breadcrumbs">
-                      <ul>
-                        <li class="is-active"><a href="">Home</a></li>
-                        <li><a href="/articles">Articles</a></li>
-                        <li><a href="/bitcoin">Bitcoin</a></li>
-                        <li><a href="/videos">Videos</a></li>
-                      </ul>
-                    </nav>
-                </div>
-            </section>
-
             <!-- section for the text : content -->
             <section class="section">
                 <div class="content" id="welcome">
-                    <h1 class="title is-3">Welcome!</h1><br>
-                    <p class="subtitle is-5">Hello reader! <br>
-                        On this website, you will find many resources I found interesting and that helped me understand things better in general.<br><br>
-                        In the articles and videos tab you will find content on different topics such as trading or technology, whereas the Bitcoin tab is reserved for Bitcoin-only content.<br><br>
+                    <h1 class="title is-3 center">Welcome!</h1><br><br>
+                    <p class="subtitle is-6 text">On this website, you will find many resources I found interesting and that helped me understand better various topics such as financial markets or Bitcoin.<br><br>
                         I hope to add more things in the future, enjoy!</p>
                 </div><br>
 
                 <!-- div for the lists of articles -->
                 <div class="content" id="latest">
-                    <h3 class="title is-5">Latest read : <a href="https://www.ft.com/content/19d90308-6858-11ea-a3c9-1fe6fedcca75" target="_blank"><u>Yuval Noah Harari: the world after coronavirus</u></a> </h3>
-
+                    <h3 class="subtitle is-5">Latest read : <a class="link-title" href="https://www.collaborativefund.com/blog/corona/" target="_blank">Morgan Housel on Coronavirus and Risk</a> </h3>
+                    <h3 class="subtitle is-5">Understand Bitcoin in 5 minutes : <a class="link-title" href="https://medium.com/free-code-camp/explain-bitcoin-like-im-five-73b4257ac833" target="_blank">Explain Bitcoin like I'm Five</a> </h3>
                 </div>
             </section>
         </div>
     </div>
 
+    <footer class="footer background-color">
+      <div class="content has-text-centered">
+        <p>
+          Made by Gustave Laurant in April 2020.
+            You can find me on <a class="orange" href="https://twitter.com/tutalaurant">Twitter</a> or
+            <a class="orange" href="https://www.linkedin.com/in/gustave-laurant-8a2214122/">LinkedIn</a>.
+        </p>
+      </div>
+    </footer>
 </body>
 </html>

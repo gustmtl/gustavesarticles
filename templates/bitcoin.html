@@ -2,9 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Home</title>
+    <title>Bitcoin</title>
 
     <link rel="stylesheet" href="static/css/styles.css">
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway&display=swap" rel="stylesheet">
 
     <!-- Bulma integration -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,45 +21,158 @@
 
 </head>
 
-<body>
+<body class="body">
 
+    <!-- section for the breadcrumb : hero -->
+    <section class="hero background-color">
+        <div class="hero-body">
+            <nav class="breadcrumb has-bullet-separator center is-medium" aria-label="breadcrumbs">
+                <ul>
+                    <li><a href="/"><p class="orange">Home</p></a></li>
+                    <li><a href="/articles"><p class="orange">Articles</p></a></li>
+                    <li class="is-active"><a href="/">Bitcoin</a></li>
+                    <li><a href="/videos"><p class="orange">Videos</p></a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
 
 
     <div class="columns">
         <div class="column is-half is-offset-one-quarter">
 
-            <!-- section for the breadcrumb : hero -->
-            <section class="hero">
-                <div class="hero-body">
-                    <nav class="breadcrumb has-bullet-separator" aria-label="breadcrumbs">
-                      <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/articles">Articles</a></li>
-                        <li class="is-active"><a href="/">Bitcoin</a></li>
-                        <li><a href="/videos">Videos</a></li>
-                      </ul>
-                    </nav>
-                </div>
-            </section>
-
             <!-- section for the text : content -->
             <section class="section">
                 <div class="content" id="welcome">
-                    <h1 class="title is-3">Coming soon!</h1><br>
-                    <p class="subtitle is-5">Here you can find educational content about Bitcoin.<br>
-                        I hope you'll enjoy it!</p>
+                    <h1 class="title is-3 center">Bitcoin resources</h1><br><br>
+                    <p class="subtitle is-6">Here you will find educational content about Bitcoin. It's divided into four sections : the basics of Bitcoin, Bitcoin & money, Bitoin & investing, and more.<br><br>
+                        I hope you'll find the articles interesting, and, more importantly, that you will understand Bicoin a little bit better after reading them!</p><br>
                 </div><br>
-                <div class="content" id="videos">
-                    <h3 class="title is-6"> Bitcoin </h3>
+
+                <hr class="hr"><br>
+                <div class="content" id="innovation">
+                    <h3 class="title is-5 center"> Bitcoin as a technological innovation</h3>
                     <ul>
-                        <li>link 3</li>
+                        <li><a class="link-title" href="https://medium.com/free-code-camp/explain-bitcoin-like-im-five-73b4257ac833" target="_blank">Explain Bitcoin like I'm five</a><br>
+                            <p class="text">With a very concrete example using an apple, the author gives a simple and intuitive explanation of how bitcoin is a true technological innovation.</p>
+                        </li><br class="br1">
+                        <br>
+
+                        <li><a class="link-title" href="https://medium.com/@jimmysong/why-bitcoin-is-different-e17b813fd947" target="_blank">Why Bitcoin is different</a><br>
+                            <p class="text">This article explains how the true innovation behind Bitcoin is the decentralized digital scarcity, and how important that is.</p>
+                        </li><br class="br1">
+                        <br>
+
+                        <li><a class="link-title" href="https://www.aclu.org/blog/privacy-technology/internet-privacy/edward-snowden-explains-blockchain-his-lawyer-and-rest-us" target="_blank">Edward Snowden's explanation to his lawyer</a><br>
+                            <p class="text">This is a conversation between Edward Snowden and his lawyer, where Snowden explains with practical examples what bitcoin and blockchain are and what makes them special.</p>
+                        </li><br class="br1">
+                        <br>
+
+                        <li><a class="link-title" href="https://www.youtube.com/watch?v=l9jOJk30eQs" target="_blank">How Bitcoin works</a><br>
+                            <p class="text">After seeing that Bitcoin is a true innovation, this short video (5 min) explains how bitcoin works from a technical perspective.
+                            Don't worry, there is nothing here you shouldn't be able to understand.</p>
+                        </li><br class="br1">
+                        <br>
+
+                    </ul><br>
+                </div>
+
+                <hr class="hr"><br>
+                <div class="content" id="money">
+                    <h3 class="title is-5 center"> Bitcoin as a new form of money</h3><br class="br1">
+                    <p class="subtitle is-6 text">In his series of articles <strong>"The Bullish Case for Bitcoin"</strong>, Vijay Boyapati compares Bitcoin to gold and fiat currencies,
+                        and talks about its advantages as a new form of money. Descriptions of Part 2, 3, and 4 are his own.</p><br class="br1">
+                    <ul>
+                        <li><a class="link-title" href="https://medium.com/@vijayboyapati/the-bullish-case-for-bitcoin-part-1-of-4-94087a70d9e8" target="_blank">The Origin of Money</a><br>
+                            <p class="text">In the first part, the author goes back to the origin of money and look at how valuable it is to have the best possible store of value and mean of exchange.</p>
+                        </li><br class="br1">
+                        <br>
+
+                        <li><a class="link-title" href="https://medium.com/@vijayb_24615/the-bullish-case-for-bitcoin-part-2-of-4-c918977c40f6" target="_blank">Attributes of a Store of Value : Bitcoin versus Gold and Fiat</a><br>
+                            <p class="text"><q>In part 2, I cover the attributes that make a good store of value and how Bitcoin compares to other monetary goods, such as gold and fiat currencies.</q></p>
+                        </li><br class="br1">
+                        <br>
+
+                        <li><a class="link-title" href="https://medium.com/@vijayboyapati/the-bullish-case-for-bitcoin-part-3-of-4-2e2c002593f1" target="_blank">The Bullish Case for Bitcoin</a><br>
+                            <p class="text"><q>In part 3, I cover the evolution of money, how a monetary good transitions from a store of value to a medium of exchange
+                                and where Bitcoin is in its evolution to a fully fledged global money.</q></p>
+                        </li><br class="br1">
+                        <br>
+
+                        <li><a class="link-title" href="https://medium.com/@vijayboyapati/the-bullish-case-for-bitcoin-part-3-of-4-2e2c002593f1" target="_blank">The Bullish Case for Bitcoin</a><br>
+                            <p class="text"><q>In part 4, I will tackle some of the major arguments against Bitcoin and why they are incorrect when understood in terms of the economic framework that has been discussed in parts 1, 2 and 3 of this article.
+                                I will also consider some of the genuine risks that face Bitcoin on its path toward full monetization.</q></p>
+                        </li><br class="br1">
+                        <br>
+                    </ul><br>
+                </div>
+
+                <hr class="hr"><br>
+                <div class="content" id="investment">
+                    <h3 class="title is-5 center"> Bitcoin as an investment</h3><br class="br1">
+                    <p class="subtitle is-6 text">Most people concern after getting a first understanding of what bitcoin is is about its valuation.
+                    How can we value bitcoin? These articles try to answer part of the question.<br>
+                    </p><br class="br1">
+                    <ul>
+                        <li><a class="link-title" href="" target="_blank">Article coming!</a><br>
+                            <p class="text"></p>
+                        </li><br class="br1">
+                        <br>
+
+                        <li><a class="link-title" href="https://medium.com/@100trillionUSD/modeling-bitcoins-value-with-scarcity-91fa0fc03e25" target="_blank">Modeling Bitcoin's Value with Scarcity</a><br>
+                            <p class="text">In this article, you will discover an intent to model Bitcoin's value from its scarcity.
+                                The limited supply of bitcoins to 21 millions is one of its core properties, and might also be what makes it so valuable.</p>
+                        </li><br class="br1">
+                        <br>
+
+                        <li><a class="link-title" href="https://medium.com/@100trillionUSD/efficient-market-hypothesis-and-bitcoin-stock-to-flow-model-db17f40e6107" target="_blank">Efficient Market Hypothesis and Bitcoin S2F Model</a><br>
+                            <p class="text">Here, the author of the previous article continues his analysis, comparing his Stock-To-Flow model to the Efficient Market Hypothesis in Bitcoin.</p>
+                        </li><br class="br1">
+                        <br>
+                    </ul><br>
+                </div>
+
+                <hr class="hr"><br>
+                <div class="content" id="more">
+                    <h3 class="title is-5 center"> More about Bitcoin</h3>
+                    <ul>
+                        <li><a class="link-title" href="https://www.forbes.com/sites/caitlinlong/2019/06/29/bitcoin-the-dollar-and-facebooks-cryptocurrency-price-volatility-versus-systemic-volatility/" target="_blank">Bitcoin, price volatility, and systemic stability</a><br>
+                            <p class="text">In this piece, Caitlin Long compares Bitcoin's system to fiat, and thinks about where Libra fit in the picture.</p>
+                        </li><br class="br1">
+                        <br>
+
+                        <li><a class="link-title" href="https://unchained-capital.com/blog/bitcoin-not-blockchain/" target="_blank">Bitcoin not blockchain</a><br>
+                            <p class="text">Blockchain is just one of the many technology used in Bitcoin protocol.
+                                Bitcoin itself goes way beyond blockchain, as you will understand with this article.</p>
+                        </li><br class="br1">
+                        <br>
+
+                        <li><a class="link-title" href="https://unchained-capital.com/blog/bitcoin-is-not-too-slow/" target="_blank">Bitcoin is not too slow</a><br>
+                            <p class="text">The article explains why Bitcoin's 10 minutes blocks are a feature, not a bug.</p>
+                        </li><br class="br1">
+                        <br>
+
+                        <li><a class="link-title" href="https://www.coindesk.com/nobody-understands-bitcoin-thats-ok" target="_blank">Nobody understands Bitcoin and that's ok</a><br>
+                            <p class="text">Can Bitcoin be fully understood? Probably not. In this article, Jameson Lopp, a renown bitcoin engineer,
+                                explains where does the complexity of Bitcoin come from, and why it's so difficult to grasp.</p>
+                        </li><br class="br1">
+                        <br>
                     </ul><br>
                 </div>
             </section>
-
-
         </div>
     </div>
+
+
+    <footer class="footer background-color">
+          <div class="content has-text-centered">
+            <p>
+              Made by Gustave Laurant in April 2020.
+                You can find me on <a class="orange" href="https://twitter.com/tutalaurant">Twitter</a> or
+                <a class="orange" href="https://www.linkedin.com/in/gustave-laurant-8a2214122/">LinkedIn</a>.
+            </p>
+          </div>
+    </footer>
 
 </body>
 </html>
