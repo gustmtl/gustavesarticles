@@ -5,19 +5,23 @@ app = Flask(__name__)
 heroku = Heroku(app)
 
 @app.route("/", methods= ['GET'])
-def show_home():
+def render_home():
     return render_template('home.html')
 
 @app.route("/articles", methods= ['GET'])
-def show_articles():
+def render_articles():
     return render_template('articles.html')
 
+@app.route("/lightning", methods= ['GET'])
+def render_ln():
+    return render_template('ln.html')
+
 @app.route("/bitcoin", methods= ['GET'])
-def show_bitcoin():
+def render_bitcoin():
     return render_template('bitcoin.html')
 
 @app.route("/videos", methods= ['GET'])
-def show_videos():
+def render_videos():
     return render_template('videos.html')
 
 
