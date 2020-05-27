@@ -8,21 +8,18 @@ heroku = Heroku(app)
 def render_home():
     return render_template('home.html')
 
-@app.route("/articles", methods= ['GET'])
+@app.route("/other", methods= ['GET'])
 def render_articles():
-    return render_template('articles.html')
+    return render_template('other.html')
 
 @app.route("/lightning", methods= ['GET'])
 def render_ln():
-    return render_template('ln.html')
+    return render_template('lightning.html')
 
 @app.route("/bitcoin", methods= ['GET'])
 def render_bitcoin():
     return render_template('bitcoin.html')
 
-@app.route("/videos", methods= ['GET'])
-def render_videos():
-    return render_template('videos.html')
 
 
 if __name__ == '__main__':
